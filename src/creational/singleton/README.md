@@ -21,21 +21,21 @@ Note que o Singleton tem duas responsabilidades e isso quebra a regra do SRP (Si
 
 ![singleton uml](./diagrams/singleton.png)
 
-## Aplicabilidade
+## 🚨 Aplicabilidade
 
 Use o singleton quando:
 
 - Use o singleton quando uma classe precisa ter somente uma instância disponível em todo o seu programa;
 - Use o singleton quando perceber que está usando variáveis globais para manter partes importantes do programa, como variáveis de configuração que são usadas por toda a aplicação.
 
-## Implementação - Teoria
+## 🗃️ Implementação - Teoria
 
 Isso pode mudar de linguagem para linguagem, em Python seria de uma maneira, em Javascript de outra e em linguagens com tipagem estáticas, como TypeScript, de outra. Mas o senso comum sobre singletons é o seguinte:
 
-- Declarar um campo privado na classe para armazenar a instância do Singleton;
-- Declarar um método public (getter) para obter a instância do Singleton;
-- Na chamada do método público, adicione _lazy instantiation_, ou seja, verifique se uma instância do Singleton já foi criada; se foi, retorne-a, se não crie uma nova instância e retorne-a;
-- Não permita que novas instâncias de classe. Você pode atingir facilmente este objetivo fazendo o construtor da classe privado.
+- Declarar um campo `privado` na classe para armazenar a instância do Singleton.
+- Declarar um método public (getter) para obter a instância do Singleton.
+- Na chamada do método público, adicione _lazy instantiation_, ou seja, verifique se uma instância do Singleton já foi criada; se foi, retorne-a, se não crie uma nova instância e retorne-a.
+- Fazer o construtor padrão privado, para prevenir que outros objetos usem o operador `new` com a classe singleton.
 
 ## Consequências
 
