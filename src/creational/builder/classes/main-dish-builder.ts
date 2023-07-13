@@ -2,8 +2,12 @@ import { MealBuilderProtocol } from '../interfaces/meal-builder-protocol';
 import { MealBox } from './meal-box';
 import { Beans, Beverage, Dessert, Meat, Rice } from './meals';
 
-export class MainDishBuilder implements MealBuilderProtocol {
+export class MainDishBuilder implements MealBuilderProtocol<MealBox> {
   private _mealBox: MealBox = new MealBox();
+
+  static builder(): MainDishBuilder {
+    return new MainDishBuilder();
+  }
 
   reset(): this {
     this._mealBox = new MealBox();
