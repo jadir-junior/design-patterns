@@ -16,7 +16,7 @@ A intenção acima significa que você pode criar objetos protótipos que têm u
 
 ## Estrututa
 
-diagrama criar\*
+![prototype uml](./diagrams/prototype.png)
 
 ## Aplicabilidade
 
