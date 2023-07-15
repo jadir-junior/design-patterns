@@ -18,7 +18,9 @@ _Definir uma interface para criar um objeto, mas deixar as subclasses decidirem 
 
 ## Estrutura
 
-Veja a pasta diagramas.
+![factory method uml](./diagrams/factory-method.png)
+
+![logistics uml](./diagrams/logistics.png)
 
 ## Aplicabilidade
 
